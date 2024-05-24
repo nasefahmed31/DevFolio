@@ -1,0 +1,628 @@
+#navbar .navbar-brand {
+    color: #fff;
+}
+
+#navbar .nav-link {
+    color: #fff;
+    position: relative;
+}
+
+#navbar .nav-link::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 1.5rem;
+    width: 0;
+    height: 1.5px;
+    background-color: #fff;
+    transition: width 0.4s;
+    border: none;
+}
+
+#navbar .nav-link.active::after {
+    width: calc(70% - 15px);
+}
+
+#navbar .nav-link:hover::after {
+    width: calc(70% - 15px);
+}
+
+#navbar .dropdown .dropdown-menu {
+    border-radius: 0;
+    padding: 1rem 0.4rem;
+}
+
+#navbar .dropdown .dropdown-menu .dropdown-item {
+    font-weight: 450;
+    font-size: 0.9rem;
+    transition: color 0.5s;
+}
+
+#navbar .dropdown .dropdown-menu>li:hover>.dropdown-item {
+    color: var(--bs-blue);
+    background-color: transparent;
+}
+
+#Home {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg) center/cover fixed no-repeat;
+}
+
+#Home .text {
+    min-height: 15rem;
+    min-width: 35rem;
+    text-align: center;
+}
+
+#Home .text .title {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#Home .text .title::after {
+    content: "";
+    animation: typing 16s linear infinite;
+}
+
+#Home .text .title::before {
+    position: absolute;
+    content: "";
+    right: -13px;
+    top: 0;
+    height: 100%;
+    width: 0.15ch;
+    background-color: white;
+    animation: fade 4s linear infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    35.416% {
+        opacity: 0;
+    }
+
+    45.83% {
+        opacity: 1;
+    }
+
+    56.25% {
+        opacity: 0;
+    }
+
+    66.66% {
+        opacity: 1;
+    }
+
+    77.08% {
+        opacity: 0;
+    }
+
+    87.5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes typing {
+    0% {
+        content: "";
+    }
+
+    0.78125% {
+        content: "D";
+    }
+
+    1.5625% {
+        content: "De";
+    }
+
+    2.34375% {
+        content: "Des";
+    }
+
+    3.125% {
+        content: "Desi";
+    }
+
+    3.90625% {
+        content: "Desig";
+    }
+
+    4.6875% {
+        content: "Design";
+    }
+
+    5.46875% {
+        content: "Designe";
+    }
+
+    6.25% {
+        content: "Designer";
+    }
+
+    21.484375% {
+        content: "Designer";
+    }
+
+    21.875% {
+        content: "Designe";
+    }
+
+    22.265625% {
+        content: "Design";
+    }
+
+    22.65625% {
+        content: "Desig";
+    }
+
+    23.046875% {
+        content: "Desi";
+    }
+
+    23.4375% {
+        content: "Des";
+    }
+
+    23.828125% {
+        content: "De";
+    }
+
+    24.21875% {
+        content: "D";
+    }
+
+    25% {
+        content: "";
+    }
+
+    25.694444444444443% {
+        content: "D";
+    }
+
+    26.38888888888889% {
+        content: "De";
+    }
+
+    27.083333333333332% {
+        content: "Dev";
+    }
+
+    27.77777777777778% {
+        content: "Deve";
+    }
+
+    28.47222222222222% {
+        content: "Devel";
+    }
+
+    29.166666666666664% {
+        content: "Develo";
+    }
+
+    29.86111111111111% {
+        content: "Develop";
+    }
+
+    30.555555555555557% {
+        content: "Develope";
+    }
+
+    31.25% {
+        content: "Developer";
+    }
+
+    46.52777777777778% {
+        content: "Developer";
+    }
+
+    46.875% {
+        content: "Develope";
+    }
+
+    47.22222222222222% {
+        content: "Develop";
+    }
+
+    47.56944444444444% {
+        content: "Develo";
+    }
+
+    47.916666666666664% {
+        content: "Devel";
+    }
+
+    48.263888888888886% {
+        content: "Deve";
+    }
+
+    48.611111111111114% {
+        content: "Dev";
+    }
+
+    48.958333333333336% {
+        content: "De";
+    }
+
+    49.30555555555556% {
+        content: "D";
+    }
+
+    50% {
+        content: "";
+    }
+
+    50.625% {
+        content: "F";
+    }
+
+    51.25% {
+        content: "Fr";
+    }
+
+    51.875% {
+        content: "Fre";
+    }
+
+    52.5% {
+        content: "Free";
+    }
+
+    53.125% {
+        content: "Freel";
+    }
+
+    53.75% {
+        content: "Freela";
+    }
+
+    54.375% {
+        content: "Freelan";
+    }
+
+    55% {
+        content: "Freelanc";
+    }
+
+    55.625% {
+        content: "Freelance";
+    }
+
+    56.25% {
+        content: "Freelancer";
+    }
+
+    71.5625% {
+        content: "Freelancer";
+    }
+
+    71.875% {
+        content: "Freelance";
+    }
+
+    72.1875% {
+        content: "Freelanc";
+    }
+
+    72.5% {
+        content: "Freelan";
+    }
+
+    72.8125% {
+        content: "Freela";
+    }
+
+    73.125% {
+        content: "Freel";
+    }
+
+    73.4375% {
+        content: "Free";
+    }
+
+    73.75% {
+        content: "Fre";
+    }
+
+    74.0625% {
+        content: "Fr";
+    }
+
+    74.375% {
+        content: "F";
+    }
+
+    75% {
+        content: "";
+    }
+
+    75.52083333333333% {
+        content: "P";
+    }
+
+    76.04166666666667% {
+        content: "Ph";
+    }
+
+    76.5625% {
+        content: "Pho";
+    }
+
+    77.08333333333333% {
+        content: "Phot";
+    }
+
+    77.60416666666667% {
+        content: "Photo";
+    }
+
+    78.125% {
+        content: "Photog";
+    }
+
+    78.64583333333333% {
+        content: "Photogr";
+    }
+
+    79.16666666666667% {
+        content: "Photogra";
+    }
+
+    79.6875% {
+        content: "Photograp";
+    }
+
+    80.20833333333333% {
+        content: "Photograph";
+    }
+
+    80.72916666666667% {
+        content: "Photographe";
+    }
+
+    81.25% {
+        content: "Photographer";
+    }
+
+    96.61458333333333% {
+        content: "Photographer";
+    }
+
+    96.875% {
+        content: "Photographe";
+    }
+
+    97.13541666666667% {
+        content: "Photograph";
+    }
+
+    97.39583333333333% {
+        content: "Photograp";
+    }
+
+    97.65625% {
+        content: "Photogra";
+    }
+
+    97.91666666666667% {
+        content: "Photogr";
+    }
+
+    98.17708333333333% {
+        content: "Photog";
+    }
+
+    98.4375% {
+        content: "Photo";
+    }
+
+    98.69791666666667% {
+        content: "Phot";
+    }
+
+    98.95833333333333% {
+        content: "Pho";
+    }
+
+    99.21875% {
+        content: "Ph";
+    }
+
+    99.47916666666667% {
+        content: "P";
+    }
+
+    100% {
+        content: "";
+    }
+}
+
+section {
+    padding-top: 6rem;
+}
+
+.smei-heading {
+    position: relative;
+    font-size: clamb(1rem, 1.5rem, 3rem);
+    width: fit-content;
+    padding-bottom: .5rem;
+}
+
+.smei-heading::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 5.5rem;
+    height: 3px;
+    background-color: var(--bs-blue);
+}
+
+.heading {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.heading h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1E1E1E;
+    text-transform: uppercase;
+}
+
+.heading p {
+    color: #4e4e4e;
+    text-align: center;
+}
+
+.heading ::after {
+    position: absolute;
+    content: "";
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3rem;
+    height: 6px;
+    background-color: var(--bs-blue);
+}
+
+#services .row .col i {
+    font-size: 2.7rem;
+    width: 7.25rem;
+    height: 7.25rem;
+    border-radius: 50%;
+    border: 10px solid var(--bs-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#services .row .col>div:hover i {
+    border-color: #CDE1F8;
+    color: white;
+    background-color: var(--bs-blue);
+}
+
+#stats {
+    background: linear-gradient(to top, rgba(5, 89, 184, 0.7), rgba(5, 89, 184, 0.7)), url(..//images/counters-bg.jpg) center/cover fixed;
+    color: white;
+    padding-bottom: 6rem;
+}
+
+#stats .row .col i {
+    font-size: 2rem;
+    border: 8px solid #CDE1F8;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+#work .row .img {
+    overflow: hidden;
+}
+
+#work .row .img img {
+    transition: 0.5s;
+}
+
+#work .row div:hover .img img {
+    transform: scale(1.2);
+}
+
+#slider {
+    background: linear-gradient(to top, rgba(5, 89, 184, 0.7), rgba(5, 89, 184, 0.7)), url(../images/overlay-bg.jpg) center/cover fixed no-repeat;
+    color: white;
+    text-align: center;
+   padding-bottom: 5rem;
+}
+#test-slider{
+    padding-bottom: 5rem;
+    max-width:900px ;
+    margin: 0 auto;
+}
+#slider button {
+    width: 0.7rem !important;
+    height: 0.7rem !important;
+    border-radius: 50%;
+}
+#blog .row .col .card .img{
+    position: relative;
+
+}
+#blog .row .col .card .img::after {
+    position: absolute;
+    content: attr(data-content);
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    background-color: var(--bs-blue);
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+#blog .row .col .card-body a{
+    transition: 0.7s;
+}
+#blog .row .col .card-body a:hover{
+    color: var(--bs-blue) !important;
+}
+#blog .row .col .card-footer a{
+    transition: 0.7s;
+}
+#blog .row .col .card-footer a:hover{
+    color: var(--bs-blue) !important;
+}
+
+#contact .socials li a i{
+    font-size: 1.2rem;
+}
+#contact .socials li a {
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    border: 3px solid var(--bs-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: black;
+    transition: 0.5s;
+}
+#contact .socials li a:hover {
+    background-color: var(--bs-blue);
+border-color: #CDE1F8;
+color: #fff;
+}
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    background: #0062d3;
+  }
+  
+  footer .copyright {
+    margin-bottom: 0.3rem;
+  }
+  
+  footer .credits {
+    margin-bottom: 0;
+  }
+  
+  footer .credits a {
+    color: #fff;
+  }
